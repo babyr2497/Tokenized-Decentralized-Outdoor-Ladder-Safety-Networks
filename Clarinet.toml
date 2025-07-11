@@ -1,0 +1,24 @@
+[project]
+name = 'Tokenized-Decentralized-Outdoor-Ladder-Safety-Networks'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.height-assessment]
+path = 'contracts/height-assessment.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.maintenance-tracking]
+path = 'contracts/maintenance-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
